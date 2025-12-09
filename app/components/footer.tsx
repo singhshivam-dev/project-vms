@@ -6,7 +6,7 @@ import { FaLinkedin, FaXTwitter, FaInstagram, FaFacebook, FaYoutube } from "reac
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#1F2125] text-gray-300 pt-12 pb-8 mt-20">
+    <footer className="w-full bg-[#1F2125] text-gray-300 pt-12 pb-8">
       <div className="mx-auto max-w-7xl px-6 flex flex-col items-center text-center gap-10">
 
         {/* 🔹 DESCRIPTION */}
