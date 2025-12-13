@@ -11,7 +11,7 @@ export default function Footer() {
 
         {/* 🔹 DESCRIPTION */}
         <p className="max-w-4xl text-gray-400 leading-relaxed text-sm md:text-base">
-          Velji Manpower Services connects talent with opportunities across every industry.
+          Velji Management Services connects talent with opportunities across every industry.
 We provide job placements for IT & Software, Engineering, Manufacturing, Logistics, Hospitality, Retail, Construction, Administration and more — supporting freshers, skilled professionals and non-skilled workers alike.
         </p>
 
@@ -44,7 +44,7 @@ We provide job placements for IT & Software, Engineering, Manufacturing, Logisti
 
           {/* COPYRIGHT */}
           <p className="text-gray-500 text-xs md:text-sm">
-            © 2025 Velji Manpower Services. All Rights Reserved
+            © 2025 Velji Management Services. All Rights Reserved
           </p>
         </div>
       </div>

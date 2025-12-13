@@ -72,16 +72,16 @@ const Home = () => {
   return (
     <main className="min-h-screen bg-slate-50">
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-sky-900 via-sky-800 to-slate-900 text-white">
+      <section className="relative overflow-hidden bg-linear-to-br from-sky-900 via-sky-800 to-slate-900 text-white">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-12 px-4 py-20 lg:flex-row lg:py-24">
           {/* Left content */}
           <div className="relative z-10 max-w-xl space-y-6">
             <p className="inline-flex items-center rounded-full border border-white/20 bg-white/5 px-3 py-1 text-xs font-medium tracking-wide uppercase">
               Recruitment Services · All Types of Hiring
             </p>
-
+            
             <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-              Velji Manpower Services
+              Velji Management Services
             </h1>
 
             <p className="text-base leading-relaxed text-sky-100 sm:text-lg">
@@ -127,8 +127,8 @@ const Home = () => {
             <div className="relative h-64 w-full rounded-3xl border border-white/15 bg-white/5 p-4 backdrop-blur-md sm:h-80 lg:h-96">
               <div className="relative h-full w-full overflow-hidden rounded-2xl bg-slate-900/70">
                 <Image
-  src="/vms-logo.jpeg"
-  alt="Velji Manpower Services"
+  src="/vms-logo-name.jpeg"
+  alt="Velji Management Services"
   fill
   className="object-contain"
 />
@@ -139,7 +139,7 @@ const Home = () => {
         </div>
 
         {/* subtle gradient overlay */}
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.22),_transparent_55%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.22),transparent_55%)]" />
       </section>
 
       {/* ABOUT SECTION */}
@@ -150,7 +150,7 @@ const Home = () => {
               Recruitment Partner for All Your Hiring Needs
             </h2>
             <p className="text-sm leading-relaxed text-slate-700 sm:text-base">
-              Velji Manpower Services provides end-to-end recruitment services
+              Velji Management Services provides end-to-end recruitment services
               for organizations of all sizes. Whether you need to ramp up your
               workforce quickly, hire niche talent, or build long-term teams, we
               support you with structured and transparent hiring.
@@ -258,7 +258,7 @@ const Home = () => {
             Industries We Serve
           </h2>
           <p className="max-w-xl text-sm text-slate-700 sm:text-base">
-            Velji Manpower Services supports hiring requirements across multiple
+            Velji Management Services supports hiring requirements across multiple
             sectors. Below are some of the key industries we cater to.
           </p>
 
@@ -314,7 +314,7 @@ const Home = () => {
         id="contact"
         className="mx-auto max-w-6xl px-4 py-12 sm:py-16 lg:py-20"
       >
-        <div className="overflow-hidden rounded-3xl border border-sky-100 bg-gradient-to-r from-sky-900 via-sky-800 to-sky-900 px-6 py-10 text-white sm:px-10 sm:py-12">
+        <div className="overflow-hidden rounded-3xl border border-sky-100 bg-linear-to-r from-sky-900 via-sky-800 to-sky-900 px-6 py-10 text-white sm:px-10 sm:py-12">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-xl space-y-3">
               <h2 className="text-xl font-semibold sm:text-2xl">
@@ -322,7 +322,7 @@ const Home = () => {
               </h2>
               <p className="text-sm leading-relaxed text-sky-100 sm:text-base">
                 Share your hiring requirements or resume with us. Our team at
-                Velji Manpower Services will connect with you and guide you
+                Velji Management Services will connect with you and guide you
                 through the next steps.
               </p>
               <p className="text-xs text-sky-100/90">

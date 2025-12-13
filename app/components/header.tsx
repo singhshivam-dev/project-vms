@@ -17,16 +17,17 @@ export default function Header() {
           {/* Enable later
           <Image
             src="/vms-blue-Photoroom.png"
-            alt="Velji Manpower Services logo"
+            alt="Velji Management Services logo"
             width={65}
             height={65}
             priority
           />
           */}
+          <Link href="/">
           <span className="font-bold uppercase text-black text-xl md:text-3xl leading-tight">
-            Velji Manpower Services
+            Velji Management Services
           </span>
-
+          </Link>
           {/* MOBILE MENU BUTTON (moved inside row for cleaner spacing) */}
           <button onClick={() => setOpen(!open)} className="md:hidden">
             {open ? <X size={32} color="black" /> : <Menu size={32} color="black" />}
@@ -35,13 +36,13 @@ export default function Header() {
 
         {/* DESKTOP NAV */}
         <nav className="hidden md:flex gap-12 text-lg font-semibold text-black border-none">
-          <Link href="/workforce-solutions" className="hover:text-[#01559B] transition-colors">
+          <Link href="/services" className="hover:text-[#01559B] transition-colors">
             Our Services
           </Link>
-          <Link href="/insights" className="hover:text-[#01559B] transition-colors">
+          <Link href="/contact" className="hover:text-[#01559B] transition-colors">
             Contact Us
           </Link>
-          <Link href="/about-us" className="hover:text-[#01559B] transition-colors">
+          <Link href="/about" className="hover:text-[#01559B] transition-colors">
             About Us
           </Link>
         </nav>
@@ -50,13 +51,13 @@ export default function Header() {
       {/* MOBILE NAV DROPDOWN */}
       {open && (
         <div className="flex flex-col items-start gap-5 bg-white px-6 pb-6 text-lg font-semibold md:hidden text-black border-t pt-5">
-          <Link href="/workforce-solutions" className="hover:text-[#01559B] transition-colors">
+          <Link href="/services" className="hover:text-[#01559B] transition-colors">
             Our Services
           </Link>
-          <Link href="/insights" className="hover:text-[#01559B] transition-colors">
+          <Link href="/contact" className="hover:text-[#01559B] transition-colors">
             Contact Us
           </Link>
-          <Link href="/about-us" className="hover:text-[#01559B] transition-colors">
+          <Link href="/about" className="hover:text-[#01559B] transition-colors">
             About Us
           </Link>
         </div>
