@@ -15,8 +15,50 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Velji Management Services | VMS",
-  description: "Velji Management Services (VMS) provides reliable recruitment, staffing, and manpower solutions across India. We specialize in permanent hiring, contract staffing, bulk recruitment, and executive search—delivering skilled talent for IT, non-IT, and industrial sectors.",
+  metadataBase: new URL("https://www.veljimanagement.com"),
+
+  title: {
+    default: "Velji Management Services | Recruitment & Staffing Company",
+    template: "%s | Velji Management Services",
+  },
+
+  description:
+    "Velji Management Services (VMS) provides reliable recruitment, staffing, and manpower solutions across India. We specialize in permanent hiring, contract staffing, bulk recruitment, and executive search for IT, non-IT, and industrial sectors.",
+
+  applicationName: "Velji Management Services",
+  authors: [{ name: "Velji Management Services" }],
+  creator: "Velji Management Services",
+  publisher: "Velji Management Services",
+
+  alternates: {
+    canonical: "https://www.veljimanagement.com",
+  },
+
+  openGraph: {
+    title: "Velji Management Services | Recruitment & Staffing Company",
+    description:
+      "Velji Management Services (VMS) provides recruitment, staffing, and manpower solutions across India for IT, non-IT, and industrial sectors.",
+    url: "https://www.veljimanagement.com",
+    siteName: "Velji Management Services",
+    type: "website",
+    locale: "en_IN",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Velji Management Services | Recruitment & Staffing Company",
+    description:
+      "Velji Management Services provides recruitment and staffing solutions across India.",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export default function RootLayout({
