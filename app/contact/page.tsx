@@ -39,7 +39,7 @@ const Contact = () => {
       <section className="bg-white py-16 px-6">
         <div className="mx-auto max-w-4xl space-y-10">
 
-          <h2 className="text-3xl font-bold text-slate-800 text-center">
+          <h2 className="text-3xl font-bold text-slate-800 text-center underline">
             Get in Touch
           </h2>
 
@@ -48,28 +48,28 @@ const Contact = () => {
 
             {/* Address */}
             <div className="flex items-start gap-4">
-              <MapPin className="w-6 h-6 text-sky-700 flex-shrink-0" />
+              <MapPin className="w-6 h-6 text-sky-700 shrink-0" />
               <p>
                 <span className="font-semibold">Velji Management Services</span><br />
-                24, Business Park, Indore, Madhya Pradesh
+                Shakti Complex, Tilak Marg, Near New Bus Stand,<br />Rajgarh Dhar, Madhya Pradesh, 454116
               </p>
             </div>
 
             {/* Phone */}
             <div className="flex items-start gap-4">
-              <Phone className="w-6 h-6 text-sky-700 flex-shrink-0" />
+              <Phone className="w-6 h-6 text-sky-700 shrink-0" />
               <p>
                 <span className="font-semibold">Phone:</span><br />
-                +91 98765 43210
+                +91 9203732776 / 9755032776
               </p>
             </div>
 
             {/* Email */}
             <div className="flex items-start gap-4">
-              <Mail className="w-6 h-6 text-sky-700 flex-shrink-0" />
+              <Mail className="w-6 h-6 text-sky-700 shrink-0" />
               <p>
                 <span className="font-semibold">Email:</span><br />
-                contact@vms-indore.com
+                info@veljimanagement.com
               </p>
             </div>
 

@@ -3,24 +3,24 @@ import Link from "next/link";
 
 const teamMembers = [
   {
-    name: "Rajesh Velji",
-    position: "Managing Director",
-    image: "/Client.jpeg", // Replace with actual image paths
+    name: "Ravi Narwal",
+    position: "Field manager",
+    image: "/RaviN.jpeg",
   },
   {
-    name: "Priya Sharma",
-    position: "Head of Operations",
-    image: "/Client.jpeg",
+    name: "Jyoti Sindra",
+    position: "Supervisor",
+    image: "/JyotiSi.jpeg",
   },
   {
-    name: "Amit Patel",
-    position: "Senior Recruitment Manager",
-    image: "/Client.jpeg",
+    name: "Krishna Dawar",
+    position: "Team leader",
+    image: "/KrishnaDa.jpeg",
   },
   {
-    name: "Neha Singh",
-    position: "Client Relations Lead",
-    image: "/Client.jpeg",
+    name: "Lakhan Bhabhar",
+    position: "Field supervisor",
+    image: "/LakhanBh.jpeg",
   },
 ];
 
@@ -49,7 +49,7 @@ const About = () => {
   return (
     <main className="min-h-screen bg-slate-50">
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-sky-900 via-sky-800 to-slate-900 text-white">
+      <section className="relative overflow-hidden bg-linear-to-br from-sky-900 via-sky-800 to-slate-900 text-white">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:py-20 lg:py-24">
           <div className="relative z-10 max-w-3xl space-y-4">
             <p className="inline-flex items-center rounded-full border border-white/20 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-wide">
@@ -185,7 +185,7 @@ const About = () => {
 
       {/* CTA SECTION */}
       <section className="mx-auto max-w-6xl px-4 py-12 sm:py-16 lg:py-20">
-        <div className="overflow-hidden rounded-3xl border border-sky-100 bg-gradient-to-r from-sky-900 via-sky-800 to-sky-900 px-6 py-10 text-white sm:px-10 sm:py-12">
+        <div className="overflow-hidden rounded-3xl border border-sky-100 bg-linear-to-r from-sky-900 via-sky-800 to-sky-900 px-6 py-10 text-white sm:px-10 sm:py-12">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-xl space-y-3">
               <h2 className="text-xl font-semibold sm:text-2xl">
@@ -198,13 +198,13 @@ const About = () => {
 
             <div className="flex flex-col gap-3 text-sm sm:flex-row">
               <Link
-                href="/#contact"
+                href="/contact"
                 className="rounded-full bg-white px-5 py-2.5 text-center font-semibold text-sky-900 shadow-sm transition hover:bg-slate-100"
               >
                 Contact Us
               </Link>
               <Link
-                href="/"
+                href="/services"
                 className="rounded-full border border-white/50 bg-transparent px-5 py-2.5 text-center font-semibold text-white backdrop-blur-sm transition hover:bg-white/10"
               >
                 View Services

@@ -333,12 +333,12 @@ const Home = () => {
             </div>
 
             <div className="flex flex-col gap-3 text-sm">
-              <button className="rounded-full bg-white px-5 py-2.5 font-semibold text-sky-900 shadow-sm transition hover:bg-slate-100">
+              <Link href="/contact" className="rounded-full bg-white px-5 py-2.5 font-semibold text-sky-900 shadow-sm transition hover:bg-slate-100">
                 Enquire for Recruitment
-              </button>
-              <button className="rounded-full border border-white/50 bg-transparent px-5 py-2.5 font-semibold text-white backdrop-blur-sm transition hover:bg-white/10">
-                Share Your Resume
-              </button>
+              </Link>
+              <Link href="/contact" className="rounded-full border border-white/50 bg-transparent px-5 py-2.5 font-semibold text-white backdrop-blur-sm transition hover:bg-white/10">
+                Share Your Resume At
+              </Link>
             </div>
           </div>
         </div>

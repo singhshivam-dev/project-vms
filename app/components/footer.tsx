@@ -18,13 +18,13 @@ We provide job placements for IT & Software, Engineering, Manufacturing, Logisti
         {/* 🔹 CONTACT SECTION */}
         <div className="flex flex-col md:flex-row justify-center gap-6 text-base font-medium">
           <span className="text-gray-200">
-            Contact Now: <span className="font-semibold">info@vms.com</span>
+            Contact Now: <span className="font-semibold">info@veljimanagement.com</span>
           </span>
           <span className="text-gray-200">
-            For Jobs: <span className="font-semibold">954 669 5565</span>
+            For Jobs & Business: <span className="font-semibold"> 9203732776 / 9755032776</span>
           </span>
           <span className="text-gray-200">
-            For Businesses: <span className="font-semibold">686 875 8544</span>
+          <span className="font-semibold"></span>
           </span>
         </div>
 
@@ -34,17 +34,17 @@ We provide job placements for IT & Software, Engineering, Manufacturing, Logisti
         {/* 🔹 SOCIAL + COPYRIGHT */}
         <div className="flex flex-col items-center gap-6">
           {/* SOCIAL ICONS */}
-          <div className="flex gap-6 text-2xl">
+          {/* <div className="flex gap-6 text-2xl">
             <Link href="#" className="hover:text-white transition"><FaLinkedin /></Link>
             <Link href="#" className="hover:text-white transition"><FaXTwitter /></Link>
             <Link href="#" className="hover:text-white transition"><FaInstagram /></Link>
             <Link href="#" className="hover:text-white transition"><FaFacebook /></Link>
             <Link href="#" className="hover:text-white transition"><FaYoutube /></Link>
-          </div>
+          </div> */}
 
           {/* COPYRIGHT */}
           <p className="text-gray-500 text-xs md:text-sm">
-            © 2025 Velji Management Services. All Rights Reserved
+            © 2026 Velji Management Services. All Rights Reserved
           </p>
         </div>
       </div>

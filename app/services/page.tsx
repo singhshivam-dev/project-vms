@@ -3,6 +3,42 @@ import Link from "next/link";
 
 const serviceCategories = [
   {
+    category: "Our Expertise",
+    tagline: "",
+    services: [
+      {
+        title: "Operations Management",
+        desc: "",
+        icon: "📋",
+      },
+      {
+        title: "Manpower & Facility Management",
+        desc: "",
+        icon: "👷‍♂️",
+      },
+      {
+        title: "Product & Dispatch Coordination",
+        desc: "",
+        icon: "🚚",
+      },
+      {
+        title: "Supply Chain & Vendor Management",
+        desc: "",
+        icon: "📦",
+      },
+      {
+        title: "Project Execution",
+        desc: "",
+        icon: "🛠️",
+      },
+      {
+        title: "HR & Admin Outsourcing",
+        desc: "",
+        icon: "💼",
+      },
+    ],
+  },
+  {
     category: "Permanent Recruitment",
     tagline: "Long-term hiring solutions for building stable teams",
     services: [
@@ -165,7 +201,7 @@ const Services = () => {
   return (
     <main className="min-h-screen bg-slate-50">
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-sky-900 via-sky-800 to-slate-900 text-white">
+      <section className="relative overflow-hidden bg-linear-to-br from-sky-900 via-sky-800 to-slate-900 text-white">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:py-20 lg:py-24">
           <div className="relative z-10 max-w-3xl space-y-4">
             <p className="inline-flex items-center rounded-full border border-white/20 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-wide">
@@ -397,7 +433,7 @@ const Services = () => {
 
       {/* CTA SECTION */}
       <section className="mx-auto max-w-6xl px-4 py-12 sm:py-16 lg:py-20">
-        <div className="overflow-hidden rounded-3xl border border-sky-100 bg-gradient-to-r from-sky-900 via-sky-800 to-sky-900 px-6 py-10 text-white sm:px-10 sm:py-12">
+        <div className="overflow-hidden rounded-3xl border border-sky-100 bg-linear-to-r from-sky-900 via-sky-800 to-sky-900 px-6 py-10 text-white sm:px-10 sm:py-12">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-xl space-y-3">
               <h2 className="text-xl font-semibold sm:text-2xl">
@@ -410,7 +446,7 @@ const Services = () => {
 
             <div className="flex flex-col gap-3 text-sm sm:flex-row">
               <Link
-                href="/#contact"
+                href="/contact"
                 className="rounded-full bg-white px-5 py-2.5 text-center font-semibold text-sky-900 shadow-sm transition hover:bg-slate-100"
               >
                 Discuss Your Needs
