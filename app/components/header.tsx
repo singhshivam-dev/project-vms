@@ -39,6 +39,9 @@ export default function Header() {
           <Link href="/services" className="hover:text-[#01559B] transition-colors">
             Our Services
           </Link>
+          <Link href="/registration" className="hover:text-[#01559B] transition-colors">
+            Registration
+          </Link>
           <Link href="/contact" className="hover:text-[#01559B] transition-colors">
             Contact Us
           </Link>
