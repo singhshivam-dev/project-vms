@@ -6,8 +6,6 @@ const services = [
     desc: "End-to-end hiring for mid to senior level roles across IT and non-IT sectors.",
     number: "01",
     color: "from-amber-500/20 to-amber-600/5",
-    // number: "02",
-    // color: "from-sky-500/20 to-sky-600/5",
     accent: "#0EA5E9",
   },
   {
