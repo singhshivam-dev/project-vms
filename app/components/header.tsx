@@ -6,11 +6,12 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "/services",     label: "Services" },
+  { href: "/services",     label: "Services"     },
   { href: "/registration", label: "Registration" },
-  { href: "/about",        label: "About" },
-  { href: "/contact",      label: "Contact" },
+  { href: "/about",        label: "About"        },
+  { href: "/contact",      label: "Contact"      },
 ];
+
 
 export default function Header() {
   const [open, setOpen]         = useState(false);
@@ -23,7 +24,6 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => { setOpen(false); }, [pathname]);
 
   return (
@@ -59,42 +59,36 @@ export default function Header() {
           gap: 1.5rem;
         }
 
-        /* Logo */
+        /* ── Logo ── */
         .vms-logo {
           display: flex;
           align-items: center;
-          // gap: 10px;
+          gap: 2px;
           text-decoration: none;
           flex-shrink: 0;
         }
-        .vms-logo-dot {
-          width: 8px;
-          height: 8px;
-          border-radius: 50%;
-          background: #F59E0B;
-          flex-shrink: 0;
-          animation: pulseDot 2s ease-in-out infinite;
-        }
-        @keyframes pulseDot {
-          0%, 100% { opacity: 1; transform: scale(1); }
-          50%       { opacity: 0.45; transform: scale(1.6); }
+        .vms-logo-text {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          line-height: 1;
         }
         .vms-logo-wordmark {
           font-family: 'DM Serif Display', serif;
-          font-size: 18px;
+          font-size: 22px;
           color: #fafafa;
           letter-spacing: -0.01em;
           line-height: 1;
         }
         .vms-logo-sub {
-          font-size: 10px;
-          color: #52525b;
-          letter-spacing: 0.09em;
+          font-size: 8.5px;
+          color: #71717a;
+          letter-spacing: 0.1em;
           text-transform: uppercase;
-          margin-left: 2px;
+          white-space: nowrap;
         }
 
-        /* Desktop nav */
+        /* ── Desktop nav ── */
         .vms-nav {
           display: flex;
           align-items: center;
@@ -131,7 +125,7 @@ export default function Header() {
           background: #F59E0B;
         }
 
-        /* CTA button */
+        /* ── CTA button ── */
         .vms-cta {
           font-size: 13px;
           font-weight: 600;
@@ -150,7 +144,7 @@ export default function Header() {
           box-shadow: 0 0 20px rgba(245,158,11,0.35);
         }
 
-        /* Hamburger */
+        /* ── Hamburger ── */
         .vms-burger {
           display: none;
           align-items: center;
@@ -166,7 +160,7 @@ export default function Header() {
         }
         .vms-burger:hover { background: rgba(255,255,255,0.1); color: #fafafa; }
 
-        /* Mobile drawer */
+        /* ── Mobile drawer ── */
         .vms-drawer {
           background: #0f0f12;
           border-top: 1px solid rgba(255,255,255,0.07);
@@ -214,23 +208,26 @@ export default function Header() {
         .vms-mobile-cta:hover { background: #FBBF24; }
 
         @media (max-width: 767px) {
-          .vms-nav  { display: none; }
+          .vms-nav        { display: none; }
           .vms-cta-desktop { display: none; }
-          .vms-burger { display: flex; }
+          .vms-burger     { display: flex; }
         }
       `}</style>
 
       <header className={`vms-header${scrolled ? " scrolled" : ""}`}>
         <div className="vms-inner">
 
-          {/* Logo */}
+          {/* ── Logo ── */}
           <Link href="/" className="vms-logo">
-            <img src="favicon-32x32.png" alt="" />
-            <span className="vms-logo-wordmark">VMS</span>
-            <span className="vms-logo-sub">.  Velji Management Services</span>
+            <img src="android-chrome-512x512.png" alt="VMS" width={52} height={52} style={{ position: "relative", zIndex: 1, marginRight: "-10px" }} />
+
+            <div className="vms-logo-text">
+              <span className="vms-logo-wordmark">VMS</span>
+              <span className="vms-logo-sub">Velji Management Services</span>
+            </div>
           </Link>
 
-          {/* Desktop nav */}
+          {/* ── Desktop nav ── */}
           <nav className="vms-nav" aria-label="Main navigation">
             {navLinks.map((link) => (
               <Link
@@ -243,12 +240,12 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Desktop CTA */}
+          {/* ── Desktop CTA ── */}
           <Link href="/contact" className="vms-cta vms-cta-desktop">
             Hire Talent →
           </Link>
 
-          {/* Mobile hamburger */}
+          {/* ── Mobile hamburger ── */}
           <button
             className="vms-burger"
             onClick={() => setOpen((o) => !o)}
@@ -259,7 +256,7 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile drawer */}
+        {/* ── Mobile drawer ── */}
         <div className={`vms-drawer${open ? " open" : ""}`} aria-hidden={!open}>
           <div className="vms-drawer-inner">
             {navLinks.map((link) => (
