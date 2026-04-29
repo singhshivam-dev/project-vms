@@ -63,7 +63,7 @@ export default function Header() {
         .vms-logo {
           display: flex;
           align-items: center;
-          gap: 10px;
+          // gap: 10px;
           text-decoration: none;
           flex-shrink: 0;
         }
@@ -227,7 +227,7 @@ export default function Header() {
           <Link href="/" className="vms-logo">
             <img src="favicon-32x32.png" alt="" />
             <span className="vms-logo-wordmark">VMS</span>
-            <span className="vms-logo-sub">Velji Management</span>
+            <span className="vms-logo-sub">.  Velji Management Services</span>
           </Link>
 
           {/* Desktop nav */}
